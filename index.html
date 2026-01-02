@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTime | Dein Fokus, deine Zeit</title>
+    <style>
+        /* Fokus auf Kontrast und Lesbarkeit (Aufgabe 1) */
+        :root {
+            --primary-color: #2D3436;
+            --accent-color: #0984E3;
+            --text-color: #2D3436;
+            --bg-color: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:focus { /* Barrierefreiheit: Tastaturnavigation */
+            outline: 3px solid var(--accent-color);
+        }
+
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            background: #eee;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .legal-box {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FocusTime</h1>
+    <nav aria-label="Hauptnavigation">
+        <a href="#about">Über uns</a>
+        <a href="#license">Lizenz</a>
+        <a href="#privacy">Datenschutz</a>
+        <a href="#impressum">Impressum</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h2>Meistere deine Konzentration.</h2>
+        <p>Pomodoro-Timer & Website-Blocker für maximale Produktivität.</p>
+        <a href="#" class="btn">Jetzt Pro-Version testen</a>
+    </section>
+
+    <section id="about">
+        <h2>Über FocusFlow</h2>
+        <p>Unsere Marke steht für Klarheit und Ruhe im digitalen Chaos.</p>
+        <ul>
+            <li><strong>Wortmarke:</strong> FocusTime™</li>
+            <li><strong>Bildmarke:</strong> Ein stilisierter blauer Kreis (Symbol für den Fokus-Zustand).</li>
+            <li><strong>Farbmarke:</strong> "Deep Focus Blue" (#0984E3).</li>
+        </ul>
+        <p><strong>Nizza-Klasse:</strong> 9 (Software), 42 (SaaS).</p>
+    </section>
+
+    <section>
+        <h2>Mediennachweise</h2>
+        <p>Wir respektieren geistiges Eigentum:</p>
+        <ul>
+            <li>Hero-Image: Unsplash (Lizenz: Unsplash License, Fotograf: John Smith)</li>
+            <li>Icons: FontAwesome (Free License)</li>
+            <li>Fonts: Open Sans (Google Fonts - SIL Open Font License)</li>
+        </ul>
+    </section>
+
+    <section id="license">
+        <h2>Lizenzvereinbarung</h2>
+        <p>Mit dem Kauf erwerben Sie ein einfaches, nicht übertragbares Nutzungsrecht für eine (1) Person.</p>
+        <p><strong>Haftungsausschluss:</strong> Wir haften nicht für Datenverlust oder verpasste Deadlines durch Softwarefehlfunktionen.</p>
+    </section>
+
+    <section id="privacy">
+        <h2>Datenschutzerklärung (Auszug)</h2>
+        <p>Wir speichern nur Ihre E-Mail zur Account-Verwaltung. Tracking-Tools (wie Google Analytics) sind anonymisiert eingebunden.</p>
+    </section>
+
+    <section>
+        <h2>Barrierefreiheitserklärung</h2>
+        <p>Diese Seite erfüllt WCAG 2.2 AA Kriterien. Alle Bilder besitzen Alternativtexte.</p>
+    </section>
+</main>
+
+<footer id="impressum">
+    <h2>Impressum</h2>
+    <p>FocusFlow GmbH<br>
+    Inhaber: [Dein Name]<br>
+    Musterstraße 42, 1010 Wien<br>
+    UID: ATU98765432<br>
+    Kontakt: support@focustime-demo.at</p>
+</footer>
+
+</body>
+</html>
